@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+  //background-color: green;height: 100vh;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: rgb(49, 32, 77);
+  text-align: center;
+  #btn {
+    margin-top: 40vh;
+    background-color: hsl(9, 89%, 46%);
+    border-radius: 1em;
+    padding:1em 5em;
+  }
+}
+@debug hello;

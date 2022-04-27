@@ -8,8 +8,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    clean: true //clean old caches
+    clean: true, //clean old caches
+    assetModuleFilename: '[name][ext]'
   },
+  devtool: 'source-map',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist')
@@ -29,6 +31,20 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource'
       }
     ]
   },

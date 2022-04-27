@@ -49,3 +49,9 @@ npm i -D html-webpack-plugin
 npm run build
   "scripts":{"build":"webpack","dev":"webpack serve"}
 npm i -D webpack-dev-server
+
+  devtool: 'source-map',
+
+npm i -D babel-loader @babel/core @babel/preset-env
+
+npm i axios

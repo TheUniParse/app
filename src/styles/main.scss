@@ -12,9 +12,17 @@ body {
   text-align: center;
   #btn {
     margin-top: 40vh;
-    background-color: hsl(9, 89%, 46%);
-    border-radius: 1em;
-    padding:1em 5em;
+    background-color: transparent;
+    // border-radius: 50%/40%;
+    // overflow: hidden;
+    // padding: 0;
+    border: none;
+    img {
+      margin: 0;
+      max-width: 9em;
+      color: red;
+    }
   }
+  p{display: inline-block;}
 }
 @debug hello;

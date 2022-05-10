@@ -1,6 +1,7 @@
 import generateJoke from './generateJoke'
 import './styles/main.scss'
-import laugh from '/src/assets/laugh.svg'
+//import laugh from '/src/assets/laugh.svg'
+import laugh from '/src/assets/gaara.png'
 
 console.log(generateJoke())
 

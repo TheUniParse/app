@@ -58,7 +58,7 @@ npm i axios
 
 npm i -D webpack-bundle-analyzer
 
-
-npm i -D webpack webpack-cli sass style-loader css-loader sass-loader html-webpack-plugin webpack-dev-server babel-loader @babel/core @babel/preset-env
-
+npm i -g webpack-cli
+npm i -D webpack sass style-loader css-loader sass-loader html-webpack-plugin webpack-dev-server babel-loader @babel/core @babel/preset-env
+file-loader
 npm i -D webpack-bundle-analyzer

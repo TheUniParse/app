@@ -7,11 +7,12 @@ html {
 *:after {
   box-sizing: inherit;
 }
+$w:9em;
 body {
   background-color: rgb(49, 32, 77);
   text-align: center;
   #btn {
-    margin-top: 40vh;
+    margin-top: calc(50vh - $w /2);
     background-color: transparent;
     // border-radius: 50%/40%;
     // overflow: hidden;
@@ -19,7 +20,7 @@ body {
     border: none;
     img {
       margin: 0;
-      max-width: 9em;
+      max-width: $w;
       color: red;
     }
   }
